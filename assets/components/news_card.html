@@ -1,0 +1,47 @@
+<div class="news-card">
+  <article>
+    <h3>{{title}}</h3>
+    <p class="source">{{source}} • {{time}}</p>
+    <p class="description">{{description}}</p>
+    <a href="{{url}}" target="_blank" class="read-more">Read more →</a>
+  </article>
+</div>
+
+<style>
+  .news-card {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    padding: 16px;
+    margin: 8px 0;
+    background: white;
+    transition: box-shadow 0.2s;
+  }
+  .news-card:hover {
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+  .news-card h3 {
+    margin: 0 0 8px 0;
+    font-size: 18px;
+    color: #202124;
+  }
+  .news-card .source {
+    font-size: 12px;
+    color: #70757a;
+    margin: 4px 0;
+  }
+  .news-card .description {
+    font-size: 14px;
+    color: #3c4043;
+    margin: 8px 0;
+    line-height: 1.5;
+  }
+  .news-card .read-more {
+    color: #1a73e8;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 500;
+  }
+  .news-card .read-more:hover {
+    text-decoration: underline;
+  }
+</style>
